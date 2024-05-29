@@ -45,6 +45,13 @@ class Program
         }
     }
 
+    static void CheckAge()
+    {
+        // Frågar efter ålder
+        Console.Write("Ange din ålder: ");
+        string input = Console.ReadLine();
+    }
+
     static void RepeatText()
     {
         // Frågar efter text
