@@ -12,6 +12,7 @@ Förklaring
     case "1" till "4": Anropar olika metoder baserat på användarens val.
 
 Metoder
+
   Enkel
     
     Frågar användaren om deras ålder och beräknar pris baserat på deras svar.
