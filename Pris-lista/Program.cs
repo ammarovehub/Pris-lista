@@ -16,3 +16,8 @@ class Program
             Console.WriteLine("4. Det tredje ordet");
             Console.WriteLine("0. Avsluta");
             Console.Write("Ange ditt val: ");
+        }
+
+
+    }
+}
