@@ -10,7 +10,7 @@ class Program
         {
             // Visa huvudmenyn
             Console.WriteLine("\nVälkommen till huvudmenyn!");
-            Console.WriteLine("1. Ungdom eller pensionär");
+            Console.WriteLine("1. Enkel biljett");
             Console.WriteLine("2. Gruppbiljett");
             Console.WriteLine("3. Upprepa text tio gånger");
             Console.WriteLine("4. Det tredje ordet");
