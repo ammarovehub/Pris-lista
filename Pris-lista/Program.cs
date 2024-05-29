@@ -25,6 +25,18 @@ class Program
                 case "0":
                     keepRunning = false;
                     break;
+                case "1":
+                    CheckAge();
+                    break;
+                case "2":
+                    CalculateGroupPrice();
+                    break;
+                case "3":
+                    RepeatText();
+                    break;
+                case "4":
+                    GetThirdWord();
+                    break;
                 default:
                     Console.WriteLine("Felaktig input, försök igen.");
                     break;
