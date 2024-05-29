@@ -50,6 +50,14 @@ class Program
         // Frågar efter ålder
         Console.Write("Ange din ålder: ");
         string input = Console.ReadLine();
+        if (int.TryParse(input, out int age))
+        {
+            if (age < 5 || age > 100)
+            {
+                Console.WriteLine("Gratis inträde.");
+            }
+
+        }
     }
 
     static void RepeatText()
