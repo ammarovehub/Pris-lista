@@ -56,7 +56,10 @@ class Program
             {
                 Console.WriteLine("Gratis inträde.");
             }
-
+            else if (age < 20)
+            {
+                Console.WriteLine("Ungdomspris: 80kr");
+            }
         }
     }
 
