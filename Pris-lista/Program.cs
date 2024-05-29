@@ -64,6 +64,10 @@ class Program
             {
                 Console.WriteLine("Pensionärspris: 90kr");
             }
+            else
+            {
+                Console.WriteLine("Standardpris: 120kr");
+            }
         }
     }
 
