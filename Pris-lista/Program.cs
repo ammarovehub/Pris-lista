@@ -69,6 +69,10 @@ class Program
                 Console.WriteLine("Standardpris: 120kr");
             }
         }
+        else
+        {
+            Console.WriteLine("Felaktig input. Vänligen ange en siffra.");
+        }
     }
 
     static void RepeatText()
