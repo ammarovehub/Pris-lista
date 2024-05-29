@@ -27,16 +27,16 @@ class Program
                     keepRunning = false;
                     break;
                 case "1":
-                    CheckAge();
+                    Enkel();
                     break;
                 case "2":
-                    CalculateGroupPrice();
+                    Grupp();
                     break;
                 case "3":
-                    RepeatText();
+                    Upprepa();
                     break;
                 case "4":
-                    GetThirdWord();
+                    Tredje();
                     break;
                 default:
                     Console.WriteLine("Felaktig input, försök igen.");
@@ -46,7 +46,7 @@ class Program
         }
     }
 
-    static void CheckAge()
+    static void Enkel()
     {
         // Frågar efter ålder
         Console.Write("Ange din ålder: ");
@@ -76,7 +76,7 @@ class Program
         }
     }
 
-    static void CalculateGroupPrice()
+    static void Grupp()
     {
         // Frågar hur många personer
         Console.Write("Hur många är ni i sällskapet? ");
@@ -124,7 +124,7 @@ class Program
         }
     }
 
-    static void RepeatText()
+    static void Upprepa()
     {
         // Frågar efter text
         Console.Write("Ange en text att upprepa: ");
@@ -141,7 +141,7 @@ class Program
         Console.WriteLine();
     }
 
-    static void GetThirdWord()
+    static void Tredje()
     {
         // Frågar efter en mening
         Console.Write("Ange en mening med minst 3 ord: ");
