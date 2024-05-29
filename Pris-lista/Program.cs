@@ -19,6 +19,7 @@ class Program
 
             // Läs användarens val
             string choice = Console.ReadLine();
+
             // Switch-sats för att hantera menyval
             switch (choice)
             {
@@ -75,7 +76,14 @@ class Program
         }
     }
 
-    static void RepeatText()
+    static void CalculateGroupPrice()
+    {
+        // Frågar hur många personer
+        Console.Write("Hur många är ni i sällskapet? ");
+        string input = Console.ReadLine();
+    }
+
+        static void RepeatText()
     {
         // Frågar efter text
         Console.Write("Ange en text att upprepa: ");
