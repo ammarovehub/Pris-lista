@@ -45,6 +45,23 @@ class Program
         }
     }
 
+    static void RepeatText()
+    {
+        // Frågar efter text
+        Console.Write("Ange en text att upprepa: ");
+        string input = Console.ReadLine();
+
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.Write($"{i}. {input}");
+            if (i < 10)
+            {
+                Console.Write(", ");
+            }
+        }
+        Console.WriteLine();
+    }
+
     static void GetThirdWord()
     {
         // Frågar efter en mening
