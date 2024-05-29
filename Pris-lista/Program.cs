@@ -25,10 +25,10 @@ class Program
                 case "0":
                     keepRunning = false;
                     break;
-            }
-            default:
+                default:
                     Console.WriteLine("Felaktig input, försök igen.");
-            break;
+                    break;
+            }
 
         }
 }
