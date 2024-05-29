@@ -43,4 +43,22 @@ class Program
             }
 
         }
+    }
+
+    static void GetThirdWord()
+    {
+        // Frågar efter en mening
+        Console.Write("Ange en mening med minst 3 ord: ");
+        string input = Console.ReadLine();
+        string[] words = input.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+        if (words.Length >= 3)
+        {
+            Console.WriteLine($"Det tredje ordet är: {words[2]}");
+        }
+        else
+        {
+            Console.WriteLine("Felaktig input. Vänligen ange en mening med minst 3 ord.");
+        }
+    }
 }
