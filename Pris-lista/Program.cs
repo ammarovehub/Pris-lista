@@ -119,6 +119,9 @@ class Program
             Console.WriteLine($"Antal personer: {numberOfPeople}");
             Console.WriteLine($"Totalkostnad för hela sällskapet: {totalCost}kr");
         }
+        {
+            Console.WriteLine("Felaktig input. Vänligen ange en siffra.");
+        }
     }
 
     static void RepeatText()
