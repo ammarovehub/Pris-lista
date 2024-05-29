@@ -1,7 +1,7 @@
 ﻿using System;
 
 class Program
-
+{ 
     static void Main(string[] args)
     {
         bool keepRunning = true;
@@ -81,9 +81,45 @@ class Program
         // Frågar hur många personer
         Console.Write("Hur många är ni i sällskapet? ");
         string input = Console.ReadLine();
+        if (int.TryParse(input, out int numberOfPeople))
+        {
+            int totalCost = 0;
+
+            for (int i = 0; i < numberOfPeople; i++)
+            {
+                Console.Write($"Ange ålder för person {i + 1}: ");
+                input = Console.ReadLine();
+
+                if (int.TryParse(input, out int age))
+                {
+                    if (age < 5 || age > 100)
+                    {
+                        // Gratis inträde
+                        continue;
+                    }
+                    else if (age < 20)
+                    {
+                        totalCost += 80;
+                    }
+                    else if (age > 64)
+                    {
+                        totalCost += 90;
+                    }
+                    else
+                    {
+                        totalCost += 120;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Felaktig input. Vänligen ange en siffra.");
+                    i--; // Repetera denna iteration för att få korrekt input
+                }
+            }
+        }
     }
 
-        static void RepeatText()
+    static void RepeatText()
     {
         // Frågar efter text
         Console.Write("Ange en text att upprepa: ");
