@@ -19,7 +19,12 @@ class Program
 
             // Läs användarens val
             string choice = Console.ReadLine();
-        }
+            // Switch-sats för att hantera menyval
+            switch (choice)
+            {
+                case "0":
+                    keepRunning = false;
+            }
 
 
     }
