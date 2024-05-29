@@ -26,7 +26,9 @@ class Program
                     keepRunning = false;
                     break;
             }
+            default:
+                    Console.WriteLine("Felaktig input, försök igen.");
+            break;
 
-
-    }
+        }
 }
