@@ -116,6 +116,8 @@ class Program
                     i--; // Repetera denna iteration för att få korrekt input
                 }
             }
+            Console.WriteLine($"Antal personer: {numberOfPeople}");
+            Console.WriteLine($"Totalkostnad för hela sällskapet: {totalCost}kr");
         }
     }
 
