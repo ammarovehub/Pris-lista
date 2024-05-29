@@ -24,6 +24,7 @@ class Program
             {
                 case "0":
                     keepRunning = false;
+                    break;
             }
 
 
